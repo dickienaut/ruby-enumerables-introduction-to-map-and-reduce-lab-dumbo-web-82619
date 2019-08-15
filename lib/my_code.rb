@@ -46,5 +46,11 @@ end
 
 
 def reduce_to_any_true(array)
-  return array.none? { |elem| elem != true }
+#  return array.none? { |elem| elem != true }
+  array.each do |elem|
+    if array.none?
+      return false
+    else
+      return true
+    end
 end 
